@@ -1,3 +1,12 @@
+/*
+  En este ejemplo para la lectura del rfid se usara el modulo RFID por i2c 
+  para este ejemplo se uso la libreria MFRC522-I2C-Library de link -> https://github.com/arozcan/MFRC522-I2C-Library
+  
+  lo que hace este ejemplo es hacer la lectura del rfid mostrandose por la comunicacion serial de arduino
+  y tambien para poder ser enviado al backend de sigfox, pero para esto se debe configurar un callback personalizado
+  en el backend de sigfox con  las variables correspondientes con las que fueron declarados en este ejemplo.
+*/
+
 #include <Wire.h>
 #include <Ufox.h>
 #include "MFRC522_I2C.h"
